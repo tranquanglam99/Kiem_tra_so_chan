@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số chẵn</title>
+</head>
+<body>
+
+    <p>Nhập số</p>
+    <input type="number" id="number">
+    <button type="button" id="check">Kiểm tra</button>
+    <p id="result"></p>
+
+    <script>
+
+        // Bắt sự kiện click vào button.
+        document.getElementById("check").addEventListener("click", function() {
+            let num = document.getElementById("number").value;
+
+            // Kiểm tra tính chẵn lẻ của num.
+            if ( (num%2) == 0) {
+                document.getElementById("result").innerText = "Đây là số chẵn!";
+            } else {
+                document.getElementById("result").innerText = "Đây là số lẻ!";
+            }
+        })
+
+    </script>
+
+</body>
+</html>
